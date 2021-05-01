@@ -1,0 +1,121 @@
+html, body{
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* header styles */
+.header {
+    text-align: center;
+    padding: 20px 0 10px 0;
+    background-color: rgb(199, 199, 199);
+}
+
+.subHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.name {
+    font-size: 3rem;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.linkedin {
+    width: 8%;
+}
+
+.linkedin img {
+    width: 100%;
+}
+
+
+/* nav styles */
+.nav {
+    background-color: rgb(213, 213, 213);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+
+.navItem {
+    text-decoration: none;
+    color: inherit;
+    padding-left: 10px;
+}
+
+.cs {
+    padding: 15px 0 0 0;
+}
+
+.banner {
+    height: 50vh;
+    background-image: url("../assets/bannerBg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerText {
+    color: rgb(230, 225, 219);
+    font-size: 4em;
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px grey;
+}
+
+
+/* media queries */
+@media screen and (max-width: 500px)  {
+    .name{
+        font-size: 2rem;
+    }
+
+    .linkedin {
+        width: 15%;
+    }
+
+    .cs {
+        padding: 0;
+    }
+    
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 2em;
+    padding: 15px 0;
+}
+
+.section {
+    height: 50vh;
+    border: 2px solid red;
+}
+
+@media screen and (max-width: 250px)  {
+    .name{
+        font-size: 1.2rem;
+    }
+
+    .linkedin {
+        width: 20%;
+    }
+
+    .cs {
+        padding: 0;
+    }
+    
+}
