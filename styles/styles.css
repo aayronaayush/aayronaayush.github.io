@@ -223,3 +223,28 @@ body {
       color: inherit;
   }
 }
+
+.stack {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  height: 40vh;
+  font-size: 1.3em;
+}
+
+.stackLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin: 10px;
+  padding: 50px;
+  border: 1px solid black;
+}
+
+.logo {
+  width: 100%;
+}
