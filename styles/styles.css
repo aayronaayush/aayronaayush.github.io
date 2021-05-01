@@ -263,3 +263,17 @@ body {
   width: 80%;
   margin: auto;
 }
+
+a {
+  text-decoration: none;
+  /* color: inherit; */
+}
+
+a:hover {
+  font-weight: bolder;
+}
+
+a:visited {
+  text-decoration: none;
+  color: initial;
+}
