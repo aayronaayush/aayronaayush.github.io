@@ -162,9 +162,9 @@ body {
 }
 
 .text a:nth-last-child(1) {
-    background-color: transparent;
-    border: 2px solid green;
-    color: rgb(53, 53, 53);
+  background-color: transparent;
+  border: 2px solid green;
+  color: rgb(53, 53, 53);
 }
 
 @media screen and (max-width: 250px) {
@@ -182,7 +182,7 @@ body {
 }
 
 .mobile {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 750px) {
@@ -217,10 +217,10 @@ body {
   .image img {
     border: 0;
   }
-  
+
   a {
-      text-decoration: none;
-      color: inherit;
+    text-decoration: none;
+    color: inherit;
   }
 }
 
@@ -247,4 +247,19 @@ body {
 
 .logo {
   width: 100%;
+}
+
+.projectImage {
+  width: 100%;
+}
+
+.description {
+  padding: 20px 0;
+  text-align: justify;
+}
+
+.projectContainer {
+  font-size: 1.3em;
+  width: 80%;
+  margin: auto;
 }
