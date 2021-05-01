@@ -1,121 +1,176 @@
-html, body{
-    font-family: 'Noto Sans JP', sans-serif;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: dimgrey;
 }
 
 /* header styles */
 .header {
-    text-align: center;
-    padding: 20px 0 10px 0;
-    background-color: rgb(199, 199, 199);
+  text-align: center;
+  padding: 20px 0 10px 0;
+  background-color: rgb(199, 199, 199);
 }
 
 .subHeader {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .name {
-    font-size: 3rem;
-    padding-right: 10px;
-    padding-left: 10px;
+  font-size: 3rem;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .linkedin {
-    width: 8%;
+  width: 8%;
 }
 
 .linkedin img {
-    width: 100%;
+  width: 100%;
 }
-
 
 /* nav styles */
 .nav {
-    background-color: rgb(213, 213, 213);
-    text-align: center;
+  background-color: rgb(213, 213, 213);
+  text-align: center;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 10px;
-    width: 80%;
-    margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
 }
 
-
 .navItem {
-    text-decoration: none;
-    color: inherit;
-    padding-left: 10px;
+  text-decoration: none;
+  color: inherit;
+  padding-left: 10px;
 }
 
 .cs {
-    padding: 15px 0 0 0;
+  padding: 15px 0 0 0;
 }
 
 .banner {
-    height: 50vh;
-    background-image: url("../assets/bannerBg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 50vh;
+  background-image: url("../assets/bannerBg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bannerText {
-    color: rgb(230, 225, 219);
-    font-size: 4em;
-    font-weight: bolder;
-    text-shadow: 3px 3px 3px grey;
+  color: rgb(230, 225, 219);
+  font-size: 4em;
+  font-weight: bolder;
+  text-shadow: 3px 3px 3px grey;
 }
 
-
 /* media queries */
-@media screen and (max-width: 500px)  {
-    .name{
-        font-size: 2rem;
-    }
+@media screen and (max-width: 500px) {
+  .name {
+    font-size: 2rem;
+  }
 
-    .linkedin {
-        width: 15%;
-    }
+  .linkedin {
+    width: 15%;
+  }
 
-    .cs {
-        padding: 0;
-    }
-    
+  .cs {
+    padding: 0;
+  }
 }
 
 .sectionTitle {
-    text-align: center;
-    font-size: 2em;
-    padding: 15px 0;
+  text-align: center;
+  font-size: 2em;
+  padding: 15px 0;
 }
 
 .section {
-    height: 50vh;
-    border: 2px solid red;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
 }
 
-@media screen and (max-width: 250px)  {
-    .name{
-        font-size: 1.2rem;
-    }
+.image {
+  width: 50%;
+}
 
-    .linkedin {
-        width: 20%;
-    }
+.image img {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
 
-    .cs {
-        padding: 0;
-    }
-    
+.text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.projectTitle {
+  font-size: 1.5em;
+  padding: 0 0 15px 0;
+}
+
+.viewButton {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  text-decoration: none;
+  text-align: center;
+  color: wheat;
+  background-color: darkred;
+  font-weight: bolder;
+  visibility: hidden;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin-bottom: 5px;
+}
+
+.section:hover .viewButton {
+  animation: showButton 1s normal forwards;
+}
+
+@keyframes showButton {
+  0% {
+    visibility: visible;
+    width: 0;
+  }
+
+  100% {
+    display: flex;
+    width: 100px;
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .linkedin {
+    width: 20%;
+  }
+
+  .cs {
+    padding: 0;
+  }
 }
